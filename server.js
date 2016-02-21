@@ -17,7 +17,7 @@ app.get('/', function (req, res) {
 
 app.get('/env', function (req, res) {
   res.end(process.env.APP_ID);
-})
+});
 
 app.listen(port, function () {
   console.log(clc.cyanBright('server started at: ' + time + ' on port: ' + port));
