@@ -1,0 +1,25 @@
+{
+  "name": "image-search-widget",
+  "version": "0.1.0",
+  "description": "a widget to search images and insert them into the dom",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrbgit/image-search-widget.git"
+  },
+  "author": "Michael Bowen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrbgit/image-search-widget/issues"
+  },
+  "homepage": "https://github.com/mrbgit/image-search-widget#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cli-color": "^1.1.0",
+    "dotenv": "^2.0.0",
+    "express": "^4.13.4"
+  }
+}
