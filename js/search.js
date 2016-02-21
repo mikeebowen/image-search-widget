@@ -12,18 +12,18 @@ $(document).ready(function () {
   //Function to get images
   function getImage () {
     //base64 encode the AppId
-    var azurekey = btoa(appId);
+    var azureKey = btoa(appId);
     //get the value from the search box
     var $searchQuery = $('#searchBox').val();
     //Create the search string
-    var myurl = 'https://api.datamarket.azure.com/Bing/Search/v1/Composite?Sources=%27image%27&$top=50&$format=json&Query=%27'+ $searchQuery + '%27';
+    var myUrl = 'https://api.datamarket.azure.com/Bing/Search/v1/Composite?Sources=%27image%27&$top=50&$format=json&Query=%27'+ $searchQuery + '%27';
     //Make post request to bing
     $.ajax({
       method: 'post',
-      url: myurl,
+      url: myUrl,
       //Set headers to authorize search with Bing
       headers:{
-        'Authorization': 'Basic ' + azurekey
+        'Authorization': 'Basic ' + azureKey
       },
       success: function (data) {
         //Insert random image in dom
